@@ -13,3 +13,28 @@
     <li>Nome: Lucas Marques de Souza | RM: 95418</li>
     <li>Nome: Giovanna Santos Viana | RM: 95813</li>
 </ul>
+
+
+<p>Cadastro - autenticação</p>
+
+```json
+    {
+      "email": "string",
+      "password": "string",
+      "firstName": "string",
+      "lastName": "string",
+      "gender": "string",
+      "birthdayDate": "2001-12-30",
+      "role": "ADMIN"
+    }
+```
+
+
+<p>Login - autenticação</p>
+
+```json
+    {
+      "email": "string",
+      "password": "string"
+    }
+```
