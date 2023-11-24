@@ -19,7 +19,7 @@ public class BabyService {
     @Autowired
     private UserService userService;
 
-    @Cacheable("babies")
+
     public List<Baby> findAll(String id) {
         return babyRepository.findAllByUserId(UUID.fromString(id));
     }

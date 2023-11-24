@@ -20,7 +20,7 @@ public class AddressService {
     @Autowired
     private UserService userService;
 
-    @Cacheable("addresses")
+
     public Page<Address> findAll(String id, Pageable pageable) {
         Page<Address> exams = addressRepository.findByUserId(UUID.fromString(id), pageable);
         return exams;

@@ -20,7 +20,7 @@ public class ExamService {
     @Autowired
     private UserService userService;
 
-    @Cacheable("exams")
+
     public Page<Exam> findAll(String id, Pageable pageable) {
         Page<Exam> exams = examRepository.findByUserId(UUID.fromString(id), pageable);
         return exams;

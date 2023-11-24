@@ -21,7 +21,7 @@ public class ReportService {
     @Autowired
     private UserService userService;
 
-    @Cacheable("relatories")
+
     public Page<Report> findAll(String id, Pageable page) {
         return reportRepository.findByUserId(UUID.fromString(id), page);
     }

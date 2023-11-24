@@ -28,6 +28,7 @@ public class Exam {
     }
 
     public Exam(RegisterExamDTO data) {
+        this.id = data.id();
         this.examName = data.examName();
         this.examType = data.examType();
         this.examDate = LocalDateTime.now();
