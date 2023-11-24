@@ -32,4 +32,8 @@ public class ExamService {
         newExam.setUser(user);
         return examRepository.save(newExam);
     }
+
+    public void deleteExam(Long id){
+        examRepository.deleteById(id);
+    }
 }

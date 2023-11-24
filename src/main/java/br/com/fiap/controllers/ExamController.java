@@ -34,4 +34,10 @@ public class ExamController {
         Exam createdExam = examService.createExam(data, id);
         return ResponseEntity.status(201).body(createdExam);
     }
+
+    @DeleteMapping("/{id}/delete")
+    public ResponseEntity removeExam(@PathVariable Long id) {
+        examService.deleteExam(id);
+        return ResponseEntity.ok().build();
+    }
 }
